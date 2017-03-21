@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:padding="4dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/item_icon"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/item_start"
+                        android:text="Local A"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/item_start_time"
+                        android:text="9h"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/item_end"
+                        android:text="Local B"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/item_end_time"
+                        android:text="10H"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="0px"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_start_date"
+        android:paddingRight="10dp"
+        android:textSize="11sp"/>
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginRight="0px"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_more_vert"
+            android:id="@+id/bot_info_more"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
+

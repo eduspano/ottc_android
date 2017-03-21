@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#444443</color>
+    <color name="colorAccent">#37474F</color>
+    <color name="brand_red">#d51826</color>
+    <color name="colorLink">#144ac7</color>
+    <color name="buttonLogin">#F1AA31</color>
+</resources>

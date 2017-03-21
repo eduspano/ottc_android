@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AccountActivity">
+
+    <item android:id="@+id/menu_edit"
+        android:title="Edit"
+        android:icon="@drawable/ic_mode_edit"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/menu_ok"
+        android:title="Ok"
+        android:visible="false"
+        android:icon="@drawable/ic_confirmar"
+        app:showAsAction="always"/>
+
+</menu>

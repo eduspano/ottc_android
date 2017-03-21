@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">OTTC Debug</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="title_activity_menu">OTTC DEBUG</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Editar perfil</string>
+
+    <color name="cinzaclaro">#F4F4F4</color>
+    <color name="white">#FFFFFF</color>
+
+
+</resources>

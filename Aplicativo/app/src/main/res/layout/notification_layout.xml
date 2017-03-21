@@ -1,0 +1,60 @@
+<com.txusballesteros.bubbles.BubbleLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:clipChildren="false"
+android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp">
+            <ImageView
+                android:id="@+id/bot_trip"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/profile_decorator"
+                android:src="@drawable/ic_play"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@+id/icon_operator"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/ic_stop"
+                android:scaleType="centerCrop"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/introPlay"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_tutorial">
+
+            <TextView
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="67dp"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Aperte aqui para iniciar a corrida"
+                android:layout_gravity="center_horizontal" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</com.txusballesteros.bubbles.BubbleLayout>

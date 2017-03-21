@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+<LinearLayout
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <ImageView android:id="@+id/form_picture"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/ic_photo_profile"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <Space
+                android:layout_width="90dp"
+                android:layout_height="wrap_content" />
+
+            <Button android:id="@+id/picture_button"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:background="@drawable/fundo_camera" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/form_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexo:"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/textView2" />
+
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Feminino"
+            android:id="@+id/form_female" />
+
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino"
+            android:gravity="center_vertical"
+            android:id="@+id/form_male" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/box_cpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/form_cpf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CPF"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/form_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/form_email2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirmar email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <EditText
+        android:id="@+id/form_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+
+    <CheckBox android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceito os termos e condições?"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/form_term" />
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/view_alt_pass"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underline_custom">
+            <TextView
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ou para alterar senha atual:"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/form_actual_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Senha Atual"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/form_new_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nova Senha"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/form_new_pass_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirma Senha"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+</ScrollView>
